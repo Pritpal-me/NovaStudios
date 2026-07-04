@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Nova Studios</title>
+    <meta name="description" content="Browse the Nova Studios image gallery featuring behind-the-scenes photos, concept art, and promotional images.">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><span class="logo-text">NOVA<span class="logo-accent">STUDIOS</span></span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="movies.html">Entertainment</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero hero-compact hero-gradient-dark" id="main">
+        <div class="container">
+            <div class="breadcrumbs"><a href="index.html">Home</a> <span>&gt;</span> Gallery</div>
+            <h1>Gallery</h1>
+            <p>Behind-the-scenes photos, concept art, and promotional images from across Nova Studios.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Films</button>
+                    <button class="filter-btn">Animation</button>
+                    <button class="filter-btn">Theme Parks</button>
+                    <button class="filter-btn">Behind the Scenes</button>
+                    <button class="filter-btn">Concept Art</button>
+                </div>
+
+                <!-- ISSUE (Intermediate): Gallery doesn't go to single column on small mobile — stays at 2 columns -->
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="placeholder-img dark" style="height: 250px;">Stellar Horizon — Space Walk Scene</div>
+                        <div class="gallery-overlay"><h4>Space Walk</h4><p>Stellar Horizon</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <!-- ISSUE (Intermediate): Missing alt text on gallery images — not accessible -->
+                        <div class="placeholder-img accent" style="height: 180px;">Stardust Kingdom — Entrance</div>
+                        <div class="gallery-overlay"><h4>Grand Entrance</h4><p>Stardust Kingdom</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img purple" style="height: 300px;">Echoes of Tomorrow — Lab Set</div>
+                        <div class="gallery-overlay"><h4>The Lab</h4><p>Echoes of Tomorrow</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img green" style="height: 200px;">The Garden — Concept Art</div>
+                        <div class="gallery-overlay"><h4>Concept Art</h4><p>The Garden</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img blue" style="height: 280px;">Ocean Depths — Underwater Filming</div>
+                        <div class="gallery-overlay"><h4>Underwater Rig</h4><p>Ocean Depths</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img dark" style="height: 160px;">NovaFan Con 2024 — Crowd</div>
+                        <div class="gallery-overlay"><h4>Fan Convention</h4><p>NovaFan Con 2024</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img red" style="height: 220px;">Luminara — Original Animation Cel</div>
+                        <div class="gallery-overlay"><h4>Animation Cel</h4><p>Luminara (1998)</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img accent" style="height: 240px;">Ashenmoor — Castle Set</div>
+                        <div class="gallery-overlay"><h4>Castle Set Build</h4><p>Chronicles of Ashenmoor</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img blue" style="height: 180px;">LED Volume Stage</div>
+                        <div class="gallery-overlay"><h4>LED Volume</h4><p>Nova Studios Technology</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img green" style="height: 260px;">Dreamscape Shanghai — Night View</div>
+                        <div class="gallery-overlay"><h4>Night Lights</h4><p>Dreamscape Shanghai</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img purple" style="height: 200px;">Skyward — Character Designs</div>
+                        <div class="gallery-overlay"><h4>Character Design</h4><p>Skyward</p></div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-img dark" style="height: 190px;">Stellar Horizon — Premiere</div>
+                        <div class="gallery-overlay"><h4>World Premiere</h4><p>Stellar Horizon</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand"><span class="logo-text">NOVA<span class="logo-accent">STUDIOS</span></span></div>
+                <p>Nova Studios is a global entertainment company dedicated to bringing extraordinary stories to life.</p>
+                <div class="footer-social"><a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">YT</a><a href="#">LI</a></div>
+            </div>
+            <div class="footer-col"><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="news.html">News</a></li><li><a href="investors.html">Investors</a></li></ul></div>
+            <div class="footer-col"><h3>Entertainment</h3><ul><li><a href="movies.html">Movies</a></li><li><a href="tv-shows.html">TV Shows</a></li><li><a href="streaming.html">Nova+</a></li><li><a href="theme-parks.html">Theme Parks</a></li></ul></div>
+            <div class="footer-col"><h3>Support</h3><ul><li><a href="help.html">Help Center</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Nova Studios. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility-page.html">Accessibility</a></div></div>
+    </footer>
+</body>
+</html>

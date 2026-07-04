@@ -1,0 +1,151 @@
+/* ============================================
+   Nova Studios — About, History, Leadership
+   ============================================ */
+
+/* About page */
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-intro .about-text h2 {
+    margin-bottom: 16px;
+}
+
+.about-intro .about-text p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.about-image {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Values grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.value-item .value-icon {
+    /* ISSUE (Beginner): icon size 56px here but feature-card uses 48px — inconsistent */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fef3c7;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.value-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.value-item p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Milestones/stats */
+.milestones-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.milestone-item .milestone-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f59e0b;
+    line-height: 1;
+}
+
+.milestone-item .milestone-label {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+/* Leadership team grid */
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* ISSUE (Beginner): Team cards in leadership have different heights 
+   because bio text varies in length and cards don't stretch equally */
+
+.leader-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.leader-card .leader-photo {
+    width: 100%;
+    height: 280px;
+}
+
+.leader-card .leader-info {
+    padding: 20px;
+}
+
+.leader-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leader-card .leader-title {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.leader-card .leader-bio {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Quote/Mission section */
+.mission-quote {
+    text-align: center;
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-quote blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.mission-quote cite {
+    font-size: 0.95rem;
+    color: #6b7280;
+    font-style: normal;
+}

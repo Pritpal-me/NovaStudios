@@ -1,0 +1,178 @@
+/* ============================================
+   Nova Studios — Footer
+   ============================================ */
+
+.site-footer {
+    background-color: #0a1628;
+    color: #d1d5db;
+    padding: 60px 0 0;
+    /* ISSUE (Advanced): font-size override conflicts with global.css body font-size */
+    font-size: 15px;
+}
+
+.footer-grid {
+    display: grid;
+    /* ISSUE (Beginner): footer columns don't align — 4 columns but content uneven */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-col p {
+    color: #9ca3af;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #f59e0b;
+}
+
+.footer-brand {
+    margin-bottom: 16px;
+}
+
+.footer-brand .logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-brand .logo-accent {
+    color: #f59e0b;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.footer-social a:hover {
+    background-color: #f59e0b;
+    color: #0a1628;
+}
+
+/* Newsletter in footer */
+.footer-newsletter {
+    margin-top: 20px;
+}
+
+.footer-newsletter p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+/* ISSUE (Intermediate): Newsletter input has no associated <label> — accessibility issue */
+.footer-newsletter .newsletter-form {
+    display: flex;
+    gap: 0;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 8px 12px;
+    border: 1px solid #374151;
+    background-color: #1e293b;
+    color: #ffffff;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.85rem;
+    flex: 1;
+    outline: none;
+}
+
+.footer-newsletter input[type="email"]::placeholder {
+    color: #6b7280;
+}
+
+.footer-newsletter button {
+    padding: 8px 16px;
+    background-color: #f59e0b;
+    color: #0a1628;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #d97706;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.footer-bottom-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.footer-bottom-links a:hover {
+    color: #f59e0b;
+}
+
+/* ISSUE (Intermediate): Footer wraps incorrectly around 900px — 
+   the grid doesn't switch to 2-column until 768px */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

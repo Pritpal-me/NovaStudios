@@ -1,0 +1,166 @@
+/* ============================================
+   Nova Studios — Navigation Bar
+   ============================================ */
+
+.navbar {
+    background-color: #0a1628;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* ISSUE (Advanced): using fixed pixel height instead of auto */
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-brand .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.navbar-brand .logo-accent {
+    color: #f59e0b;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    /* ISSUE (Beginner): nav items gap inconsistent — some items closer than others */
+    gap: 4px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    display: block;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #f59e0b;
+}
+
+/* ISSUE (Beginner): No .nav-links a.active style — missing active navigation state */
+
+/* Mega Menu */
+.nav-links li:hover .mega-menu {
+    display: block;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 24px;
+    min-width: 500px;
+    z-index: 1001;
+}
+
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.mega-menu a {
+    color: #1a1a2e;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.mega-menu a:hover {
+    background-color: #f3f4f6;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.mega-menu-header {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6b7280;
+    padding: 8px 12px 4px;
+    cursor: default;
+}
+
+/* Mobile toggle — just visual, no JS */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+/* ISSUE (Intermediate): Navbar responsive breakpoint uses 768px here 
+   but responsive.css uses 800px — conflicting breakpoints */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        height: 60px;
+    }
+}
+
+/* ISSUE (Intermediate): Gap between 768px and 1024px — navbar links overflow */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav-links a {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+    }
+
+    .mega-menu {
+        min-width: 350px;
+    }
+}

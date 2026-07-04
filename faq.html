@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Nova Studios</title>
+    <meta name="description" content="Frequently asked questions about Nova Studios, Nova+ streaming, theme parks, and merchandise.">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <style>
+        /* ISSUE (Advanced): Inline <style> block instead of external CSS — poor organization */
+        .faq-section { margin-bottom: 40px; }
+        .faq-section h2 { font-size: 1.5rem; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid #f59e0b; }
+        .faq-item { border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+        .faq-question { padding: 16px 20px; font-weight: 600; font-size: 1rem; color: #0a1628; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background-color: #ffffff; }
+        .faq-question:hover { background-color: #f8f9fa; }
+        .faq-answer { padding: 0 20px 16px; font-size: 0.95rem; color: #6b7280; line-height: 1.7; }
+        /* ISSUE (Beginner): Inconsistent list styling — some FAQ answers have bullets, some don't */
+        .faq-answer ul { padding-left: 20px; margin-top: 8px; }
+        .faq-answer ul.no-bullets { list-style: none; padding-left: 0; }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><span class="logo-text">NOVA<span class="logo-accent">STUDIOS</span></span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="movies.html">Entertainment</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="hero hero-compact hero-gradient-dark" id="main">
+        <div class="container">
+            <div class="breadcrumbs"><a href="index.html">Home</a> <span>&gt;</span> FAQ</div>
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to the most common questions about Nova Studios and our services.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container" style="max-width: 800px;">
+
+                <div class="faq-section">
+                    <h2>Nova+ Streaming</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How much does Nova+ cost? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Nova+ offers three plans: Basic ($7.99/month), Standard ($12.99/month), and Premium ($19.99/month). All plans include a 30-day free trial. You can cancel anytime without penalty.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What devices support Nova+? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Nova+ is available on a wide range of devices:</p>
+                            <ul>
+                                <li>iOS and Android smartphones and tablets</li>
+                                <li>Smart TVs (Samsung, LG, Sony, Vizio)</li>
+                                <li>Streaming devices (Roku, Apple TV, Fire TV, Chromecast)</li>
+                                <li>Web browsers (Chrome, Firefox, Safari, Edge)</li>
+                                <li>Gaming consoles (PlayStation, Xbox, Nintendo Switch)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Can I download content for offline viewing? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Yes, offline downloads are available on Standard and Premium plans. You can download up to 25 titles at a time on iOS and Android devices. Downloads expire after 30 days or 48 hours after you start watching, whichever comes first.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How do I cancel my subscription? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>You can cancel your Nova+ subscription at any time through your account settings. Your access will continue until the end of your current billing period. No cancellation fees apply.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Theme Parks</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How do I buy tickets? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Tickets can be purchased online through our website or at park entrance gates. We recommend buying online in advance for the best prices and to guarantee entry on busy days.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Are annual passes available? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer several annual pass options:</p>
+                            <!-- ISSUE (Beginner): Inconsistent list styling — this list uses no-bullets class unlike the one above -->
+                            <ul class="no-bullets">
+                                <li>Silver Pass — Access to your home park, blackout dates apply ($499/year)</li>
+                                <li>Gold Pass — Access to all domestic parks, limited blackout dates ($799/year)</li>
+                                <li>Platinum Pass — Unlimited access to all parks worldwide, no blackouts ($1,299/year)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What accessibility accommodations are available? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>All Nova parks are fully accessible with wheelchair-accessible pathways, adapted rides, sensory-friendly hours, sign language interpretation, and assistance animals welcome. Contact Guest Services at any park for personalized assistance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-section">
+                    <h2>Merchandise</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What is your return policy? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>We offer a 30-day return policy for unused merchandise in original packaging. Sale items and personalized products are final sale. Returns can be initiated through your account or by contacting customer support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Do you ship internationally? <span>+</span></div>
+                        <div class="faq-answer">
+                            <p>Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. Orders over $100 qualify for free standard shipping in the US and Canada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <p class="text-muted">Can't find what you're looking for?</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand"><span class="logo-text">NOVA<span class="logo-accent">STUDIOS</span></span></div>
+                <p>Nova Studios is a global entertainment company dedicated to bringing extraordinary stories to life.</p>
+                <div class="footer-social"><a href="#">FB</a><a href="#">TW</a><a href="#">IG</a><a href="#">YT</a><a href="#">LI</a></div>
+            </div>
+            <div class="footer-col"><h3>Company</h3><ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="news.html">News</a></li><li><a href="investors.html">Investors</a></li></ul></div>
+            <div class="footer-col"><h3>Entertainment</h3><ul><li><a href="movies.html">Movies</a></li><li><a href="tv-shows.html">TV Shows</a></li><li><a href="streaming.html">Nova+</a></li><li><a href="theme-parks.html">Theme Parks</a></li></ul></div>
+            <div class="footer-col"><h3>Support</h3><ul><li><a href="help.html">Help Center</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Nova Studios. All rights reserved.</p><div class="footer-bottom-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility-page.html">Accessibility</a></div></div>
+    </footer>
+</body>
+</html>

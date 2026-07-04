@@ -1,0 +1,236 @@
+/* ============================================
+   Nova Studios — Movies & TV Shows
+   ============================================ */
+
+/* Movies filter bar */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: #374151;
+    transition: all 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #0a1628;
+    color: #ffffff;
+    border-color: #0a1628;
+}
+
+/* Movie detail page */
+.movie-detail-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.movie-poster {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.movie-poster .placeholder-img {
+    /* ISSUE (Beginner): fixed height causes stretched look on different screen sizes */
+    height: 450px;
+}
+
+.movie-info h1 {
+    margin-bottom: 8px;
+}
+
+.movie-meta-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    color: #6b7280;
+    flex-wrap: wrap;
+}
+
+.movie-meta-row .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.movie-rating-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f59e0b;
+    margin-bottom: 16px;
+}
+
+.movie-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #374151;
+    margin-bottom: 24px;
+}
+
+/* Cast grid */
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.cast-member {
+    text-align: center;
+}
+
+.cast-member .cast-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+}
+
+.cast-member .cast-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0a1628;
+}
+
+.cast-member .cast-role {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* Movie tabs — static visual only */
+.movie-tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 32px;
+    gap: 0;
+}
+
+.movie-tab {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #6b7280;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    cursor: pointer;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.movie-tab.active {
+    color: #0a1628;
+    border-bottom-color: #f59e0b;
+}
+
+/* TV show cards — slightly different from movie cards */
+/* ISSUE (Advanced): Duplicates .movie-card styles with minor differences */
+.tv-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.tv-card:hover {
+    transform: translateY(-6px);
+}
+
+.tv-card .card-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tv-card .card-body {
+    padding: 16px;
+}
+
+.tv-card .card-title {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+    color: #0a1628;
+}
+
+.tv-card .show-meta {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.tv-card .card-text {
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Episode list */
+.episode-list {
+    list-style: none;
+    padding: 0;
+}
+
+.episode-item {
+    display: flex;
+    gap: 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+    align-items: center;
+}
+
+.episode-number {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #d1d5db;
+    min-width: 36px;
+    text-align: center;
+}
+
+.episode-thumb {
+    width: 160px;
+    height: 90px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.episode-info {
+    flex: 1;
+}
+
+.episode-info h4 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.episode-info p {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0;
+}
+
+.episode-duration {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    white-space: nowrap;
+}

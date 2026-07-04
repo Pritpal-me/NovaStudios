@@ -1,0 +1,158 @@
+/* ============================================
+   Nova Studios — Careers & Departments
+   ============================================ */
+
+/* Job listings */
+.job-listing {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.job-listing:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.job-listing .job-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.job-listing .job-info .job-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.job-listing .job-info .job-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Benefits grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 24px 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.benefit-item .benefit-icon {
+    /* ISSUE (Beginner): uses 40px here but about.css uses 56px — inconsistent icon sizes */
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #dbeafe;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.benefit-item h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.benefit-item p {
+    font-size: 0.85rem;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Department cards */
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.dept-card {
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-top: 4px solid #f59e0b;
+}
+
+.dept-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dept-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.dept-card .dept-count {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Career steps */
+.career-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    counter-reset: step;
+}
+
+.career-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.career-step::before {
+    counter-increment: step;
+    content: counter(step);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #0a1628;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 auto 16px;
+}
+
+.career-step h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.career-step p {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Testimonial section — employee quotes */
+.employee-testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}

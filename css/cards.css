@@ -1,0 +1,459 @@
+/* ============================================
+   Nova Studios — Cards
+   ============================================ */
+
+/* Base card */
+.card {
+    background-color: #ffffff;
+    /* ISSUE (Beginner): border-radius inconsistent — .card is 8px, movie-card is 12px, blog-card is 4px */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.card-img {
+    width: 100%;
+    /* ISSUE (Beginner): fixed height causes aspect ratio issues */
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #0a1628;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #6b7280;
+    /* ISSUE (Beginner): line-height 1.4 here but global sets 1.6 */
+    line-height: 1.4;
+}
+
+.card-meta {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 12px;
+}
+
+.card-footer-section {
+    padding: 12px 20px;
+    border-top: 1px solid #f3f4f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* Movie Card */
+.movie-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    /* ISSUE (Beginner): shadow different from .card */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+}
+
+.movie-card .card-img {
+    height: 280px;
+}
+
+.movie-card .card-body {
+    /* ISSUE (Beginner): padding different from base .card — 16px vs 20px */
+    padding: 16px;
+}
+
+.movie-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.movie-card .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.movie-card .rating {
+    color: #f59e0b;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.movie-card .genre {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Blog Card */
+.blog-card {
+    background-color: #ffffff;
+    /* ISSUE (Beginner): border-radius 4px — different from .card (8px) and .movie-card (12px) */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    /* ISSUE (Beginner): has border, unlike other cards */
+    border: 1px solid #e5e7eb;
+}
+
+.blog-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.blog-card .card-img {
+    height: 180px;
+}
+
+.blog-card .card-body {
+    padding: 20px;
+}
+
+.blog-card .card-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3b82f6;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.blog-card .card-title {
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.blog-card .card-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.blog-card .card-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* Team Card */
+.team-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+}
+
+.team-card .team-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+}
+
+.team-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-card .team-role {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.team-card .team-bio {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-card .card-img {
+    height: 220px;
+    /* ISSUE (Beginner): object-fit missing — images may stretch */
+}
+
+.product-card .card-body {
+    padding: 16px;
+}
+
+.product-card .product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #0a1628;
+}
+
+.product-card .product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.product-card .product-price .original-price {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+/* Character Card */
+.character-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.character-card .card-img {
+    height: 250px;
+}
+
+.character-card .card-body {
+    padding: 20px;
+}
+
+.character-card .character-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0a1628;
+    margin-bottom: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.character-card .character-movie {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Feature Card (for departments, services, etc.) */
+.feature-card {
+    padding: 32px 24px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.feature-card .feature-icon {
+    /* ISSUE (Beginner): icon sizes inconsistent — some pages use 48px, others 56px or 40px */
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Award Card */
+.award-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-left: 4px solid #f59e0b;
+}
+
+.award-card .award-icon {
+    font-size: 2rem;
+    color: #f59e0b;
+    flex-shrink: 0;
+}
+
+.award-card h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.award-card p {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-bottom: 0;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 2px solid #e5e7eb;
+    position: relative;
+}
+
+.pricing-card.featured {
+    border-color: #f59e0b;
+    transform: scale(1.05);
+}
+
+.pricing-card .plan-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0a1628;
+    margin-bottom: 8px;
+}
+
+.pricing-card .plan-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a1628;
+    margin-bottom: 4px;
+}
+
+.pricing-card .plan-price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6b7280;
+}
+
+.pricing-card .plan-description {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+
+.pricing-card .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+.pricing-card .plan-features li {
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.pricing-card .plan-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card.featured .badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f59e0b;
+    color: #0a1628;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #f3f4f6;
+}
+
+.testimonial-card .quote {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonial-card .author-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.testimonial-card .author-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #0a1628;
+}
+
+.testimonial-card .author-title {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* ISSUE (Intermediate): card-grid doesn't switch to single column on small screens —
+   relies on responsive.css which has different breakpoint */

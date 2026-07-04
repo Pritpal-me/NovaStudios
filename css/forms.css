@@ -1,0 +1,141 @@
+/* ============================================
+   Nova Studios — Forms
+   ============================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1a1a2e;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+/* Checkbox & Radio */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.form-check input {
+    width: 16px;
+    height: 16px;
+}
+
+.form-check label {
+    font-size: 0.9rem;
+    color: #374151;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+/* Form row (for side-by-side fields) */
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Search form */
+.search-form {
+    display: flex;
+    max-width: 500px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px 0 0 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.search-form input:focus {
+    border-color: #3b82f6;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.search-form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ISSUE (Intermediate): Search form input and button heights don't match 
+   because input uses content-box equivalent with different border widths */
+
+/* Form error state */
+.form-control.error {
+    border-color: #ef4444;
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 0.8rem;
+    margin-top: 4px;
+}
+
+/* ISSUE (Intermediate): Form has no fieldset or legend grouping — accessibility */
+
+/* Inline form */
+.form-inline {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.form-inline .form-group {
+    margin-bottom: 0;
+}
