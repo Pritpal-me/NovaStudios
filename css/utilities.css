@@ -16,8 +16,6 @@
 .text-white { color: #ffffff; }
 .text-muted { color: #6b7280; }
 .text-accent { color: #f59e0b; }
-/* ISSUE (Advanced): .text-primary defined here AND in global.css (as link color) — cascade confusion */
-.text-primary { color: #2563eb; }
 .text-dark { color: #0a1628; }
 .text-success { color: #22c55e; }
 .text-danger { color: #ef4444; }
