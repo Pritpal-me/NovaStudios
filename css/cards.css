@@ -287,14 +287,24 @@
 
 /* Feature Card (for departments, services, etc.) */
 .feature-card {
-    display: flex;
-    flex-direction: column;
     padding: 32px 24px;
     background-color: #ffffff;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     border: 1px solid #f3f4f6;
+}
+.reports-grid .feature-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.reports-grid .feature-card p {
+    flex-grow: 1;
+}
+
+.reports-grid .feature-card .btn {
+    margin-top: auto;
 }
     
 
